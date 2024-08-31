@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>49/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 28 16:01:18 EET 2024</td>
+<td>Started on:</td><td>Sat Aug 31 14:34:06 EET 2024</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10912 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10625 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
-<td><div><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;501&apos; for key &apos;customers.PRIMARY&apos;
+<td><div><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;432&apos; for key &apos;customers.PRIMARY&apos;
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
 	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1537)
 	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2384)
 	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1410)
-	at dbtesting1.mytest.AddData(mytest.java:44)
+	at dbtesting1.mytest.AddData(mytest.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -109,14 +109,86 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1120072844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1120072844'><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;501&apos; for key &apos;customers.PRIMARY&apos;
+</pre></div><a href='#' onClick='toggleBox("stack-trace820878444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820878444'><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;432&apos; for key &apos;customers.PRIMARY&apos;
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
 	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1537)
 	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2384)
 	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1410)
-	at dbtesting1.mytest.AddData(mytest.java:44)
+	at dbtesting1.mytest.AddData(mytest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td><div><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;80&apos; for key &apos;customers.PRIMARY&apos;
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1537)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2384)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1410)
+	at dbtesting1.mytest.AddData(mytest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace745627268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745627268'><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;80&apos; for key &apos;customers.PRIMARY&apos;
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1537)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2384)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1410)
+	at dbtesting1.mytest.AddData(mytest.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -145,7 +217,79 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>2</td>
-<td>dbtesting1.mytest@3ebff828</td></tr>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td><div><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;385&apos; for key &apos;customers.PRIMARY&apos;
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1537)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2384)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1410)
+	at dbtesting1.mytest.AddData(mytest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace123337428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace123337428'><pre>java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;385&apos; for key &apos;customers.PRIMARY&apos;
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1537)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2384)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1410)
+	at dbtesting1.mytest.AddData(mytest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,20 +299,250 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
 <td title='dbtesting1.mytest.updateData()'><b>updateData</b><br>Test class: dbtesting1.mytest</td>
 <td></td>
 <td>0</td>
-<td>dbtesting1.mytest@3ebff828</td></tr>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
 <tr>
 <td title='dbtesting1.mytest.GetData()'><b>GetData</b><br>Test class: dbtesting1.mytest</td>
 <td></td>
-<td>6</td>
-<td>dbtesting1.mytest@3ebff828</td></tr>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
 <tr>
-<td title='dbtesting1.mytest.deleteData()'><b>deleteData</b><br>Test class: dbtesting1.mytest</td>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
 <td></td>
 <td>0</td>
-<td>dbtesting1.mytest@3ebff828</td></tr>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
+<tr>
+<td title='dbtesting1.mytest.AddData()'><b>AddData</b><br>Test class: dbtesting1.mytest</td>
+<td></td>
+<td>0</td>
+<td>dbtesting1.mytest@783a467b</td></tr>
 </table><p>
 </body>
 </html>
